@@ -87,8 +87,61 @@ footer{
     color: grey;
     margin-top: 10px;
     padding-top: 10px;
+    padding-left: 15px;
     height: 40px;
     background-image: linear-gradient(to right, rgb(224, 224, 184), white); 
+}
+
+/***************Menu***************/
+
+.menus{
+    padding-top: 3rem 0;
+    
+}
+
+.infoplatos{
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: grey
+}
+
+.infoplatos h2{
+    align-self: flex-start;
+    padding-left: 10%;
+    padding-top: 35px;
+    font-size: 35px;
+}
+
+.infoplatos hr, .infoplatos p{
+    width: 90%;
+}
+
+.m1{
+background-image: linear-gradient(to bottom, beige, white);
+grid-area: m1;
+}
+
+.m2{
+    background-image: linear-gradient(to bottom, beige, white);
+grid-area: m2;
+}
+
+.m3{
+    background-image: linear-gradient(to bottom, beige, white);
+grid-area: m3;
+}
+
+.contenidomenu{
+    display: grid;
+    grid-template-columns: repeat(3, 15vw);
+    grid-template-areas: 
+    "m1 m2 m3";
+    justify-content: center;
+    column-gap: 5%;
+    font-family: sans-serif;
 }
 
 /*********Galeria***/
